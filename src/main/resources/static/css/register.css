@@ -1,0 +1,52 @@
+/* General Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Styles */
+.form-control {
+    transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Password Strength Meter */
+.password-strength-meter {
+    height: 4px;
+    background: #ddd;
+    margin: 8px 0;
+    border-radius: 2px;
+}
+
+.strength-weak { background: #ff4444; }
+.strength-medium { background: #ffbb33; }
+.strength-strong { background: #00C851; }
+
+/* Password Requirements List */
+.password-requirements {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.requirement-met {
+    color: #198754;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 1rem;
+    }
+}
