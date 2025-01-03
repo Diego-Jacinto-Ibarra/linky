@@ -4,9 +4,9 @@ document.querySelector('form').addEventListener('submit', async function (event)
     const response = await fetch('/urls/shorten', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'text/plain'
         },
-        body: JSON.stringify({ url: urlInput.value })
+        body: urlInput.value
     });
     const result = await response.json();
     if (result.shortenedUrl) {
