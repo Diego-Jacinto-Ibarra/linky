@@ -22,6 +22,9 @@ public class Url {
         this.is_anonymous = is_anonymous;
     }
 
+    public Url() {
+    }
+
     public Long getId() {
         return id;
     }
