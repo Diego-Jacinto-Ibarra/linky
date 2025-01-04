@@ -1,7 +1,7 @@
 document.querySelector('form').addEventListener('submit', async function (event) {
     event.preventDefault();
     const urlInput = document.querySelector('input[name="url"]');
-    const response = await fetch('/urls/shorten', {
+    const response = await fetch('linky/urls/shorten', {
         method: 'POST',
         headers: {
             'Content-Type': 'text/plain'
